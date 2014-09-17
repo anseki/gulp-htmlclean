@@ -1,6 +1,7 @@
 # gulp-htmlclean
 
 Simple and lightweight cleaner that just removes whitespaces, comments, etc. to minify HTML.  
+This differs from others in that this removes whitespaces, line-breaks, etc. as much as possible.  
 This [gulp](http://gulpjs.com/) plugin is wrapper of [htmlclean](https://github.com/anseki/htmlclean).
 
 [HtmlCompressor](http://code.google.com/p/htmlcompressor/), [HTMLMinifier](https://github.com/kangax/html-minifier) and others are better choice if you want to control details of editing.  
@@ -73,4 +74,5 @@ gulp.task('default', function() {
 See [htmlclean](https://github.com/anseki/htmlclean) for options and more information.
 
 ## History
+ * 2014-09-18			v2.2.1			Update package.json for htmlclean v2.1.1.
  * 2014-09-16			v2.2.0			Initial release for htmlclean v2.2.0. (fix version number.)
