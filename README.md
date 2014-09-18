@@ -74,5 +74,6 @@ gulp.task('default', function() {
 See [htmlclean](https://github.com/anseki/htmlclean) for options and more information.
 
 ## History
- * 2014-09-18			v2.2.1			Update package.json for htmlclean v2.1.1.
+ * 2014-09-18			v2.2.2			Update package.json for htmlclean v2.2.2.
+ * 2014-09-18			v2.2.1			Update package.json for htmlclean v2.2.1.
  * 2014-09-16			v2.2.0			Initial release for htmlclean v2.2.0. (fix version number.)
