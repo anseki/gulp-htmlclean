@@ -1,6 +1,6 @@
 {
   "name": "gulp-htmlclean",
-  "version": "2.5.0",
+  "version": "2.5.1",
   "title": "gulp-htmlclean",
   "description": "Simple and lightweight cleaner that just removes whitespaces, comments, etc. to minify HTML/SVG. This differs from others in that this removes whitespaces, line-breaks, etc. as much as possible.",
   "keywords": [
@@ -21,7 +21,7 @@
   "dependencies": {
     "gulp-util": "^3.0.0",
     "through2": "^0.6.1",
-    "htmlclean": "~2.5.0"
+    "htmlclean": "~2.5.1"
   },
   "homepage": "https://github.com/anseki/gulp-htmlclean",
   "repository": {
