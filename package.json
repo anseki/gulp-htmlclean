@@ -1,6 +1,6 @@
 {
   "name": "gulp-htmlclean",
-  "version": "2.7.5",
+  "version": "2.7.6",
   "title": "gulp-htmlclean",
   "description": "Simple and safety HTML/SVG cleaner to minify without changing its structure.",
   "keywords": [
@@ -21,7 +21,7 @@
   "dependencies": {
     "gulp-util": "^3.0.0",
     "through2": "^0.6.1",
-    "htmlclean": "~2.7.5"
+    "htmlclean": "~2.7.6"
   },
   "homepage": "https://github.com/anseki/gulp-htmlclean",
   "repository": {
