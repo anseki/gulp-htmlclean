@@ -3,6 +3,7 @@
 This [gulp](http://gulpjs.com/) plugin is wrapper of [htmlclean](https://github.com/anseki/htmlclean).
 
 * [Grunt](http://gruntjs.com/) plugin: [grunt-htmlclean](https://github.com/anseki/grunt-htmlclean)
+* [webpack](http://webpack.github.io/) loader: [htmlclean-loader](https://github.com/anseki/htmlclean-loader)
 
 **If you want to just clean files, [Command Line Tool](https://github.com/anseki/htmlclean) is easy way.**
 
