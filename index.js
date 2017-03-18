@@ -13,7 +13,9 @@ module.exports = function(options) {
       return callback(new gutil.PluginError('gulp-htmlclean', 'Streaming not supported'));
     }
 
-    file.contents = new Buffer(htmlclean(file.contents.toString(), options));
+    var content = htmlclean(file.contents.toString(), options);
+    // Check `allocUnsafe` to make sure of the new API.
+    file.contents = Buffer.allocUnsafe && Buffer.from ? Buffer.from(content) : new Buffer(content);
     callback(null, file);
   });
 };
