@@ -5,7 +5,7 @@ var gutil = require('gulp-util'),
   htmlclean = require('htmlclean');
 
 module.exports = function(options) {
-  return through.obj(function(file, encoding, callback) {
+  return through.obj(function(file, encoding, callback) { // eslint-disable-line consistent-return
     if (file.isNull()) {
       return callback(null, file);
     }
