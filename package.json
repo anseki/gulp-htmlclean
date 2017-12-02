@@ -21,7 +21,7 @@
   "dependencies": {
     "gulp-util": "^3.0.8",
     "through2": "^2.0.3",
-    "htmlclean": "^3.0.3"
+    "htmlclean": "^3.0.5"
   },
   "homepage": "https://github.com/anseki/gulp-htmlclean",
   "repository": {
