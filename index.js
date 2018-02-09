@@ -1,6 +1,6 @@
 'use strict';
 
-var gutil = require('gulp-util'),
+var PluginError = require('plugin-error'),
   through = require('through2'),
   htmlclean = require('htmlclean');
 
@@ -10,7 +10,7 @@ module.exports = function(options) {
       return callback(null, file);
     }
     if (file.isStream()) {
-      return callback(new gutil.PluginError('gulp-htmlclean', 'Streaming not supported'));
+      return callback(new PluginError('gulp-htmlclean', 'Streaming not supported'));
     }
 
     var content = htmlclean(file.contents.toString(), options);
