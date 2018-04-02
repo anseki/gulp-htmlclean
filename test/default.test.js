@@ -8,16 +8,19 @@ const expect = require('chai').expect,
     htmlclean['@noCallThru'] = true;
     return htmlclean;
   })(sinon.spy(content => `${content}<htmlclean>`)),
-  plugin = proxyquire('../', {htmlclean});
+  plugin = proxyquire('../', {htmlclean}),
+
+  CONTENTS = 'content',
+  RES_METHOD = `${CONTENTS}<htmlclean>`;
 
 function resetAll() {
   htmlclean.resetHistory();
 }
 
-function newFile(content, path) {
+function newBufferFile(path) {
   return new File({
     // Check `allocUnsafe` to make sure of the new API.
-    contents: Buffer.allocUnsafe && Buffer.from ? Buffer.from(content) : new Buffer(content),
+    contents: Buffer.allocUnsafe && Buffer.from ? Buffer.from(CONTENTS) : new Buffer(CONTENTS),
     path
   });
 }
@@ -28,7 +31,7 @@ describe('implements a basic flow as Buffer based plugin', () => {
   it('should accept contents from Buffer', done => {
     resetAll();
     const pluginStream = plugin(OPTS),
-      passedFile = newFile('content');
+      passedFile = newBufferFile();
     expect(passedFile.isNull()).to.be.false;
     expect(passedFile.isStream()).to.be.false;
     expect(passedFile.isBuffer()).to.be.true;
@@ -38,8 +41,8 @@ describe('implements a basic flow as Buffer based plugin', () => {
       expect(file.isNull()).to.be.false;
       expect(file.isStream()).to.be.false;
       expect(file.isBuffer()).to.be.true;
-      expect(htmlclean.calledOnceWithExactly('content', OPTS)).to.be.true;
-      expect(file.contents.toString()).to.equal('content<htmlclean>');
+      expect(htmlclean.calledOnceWithExactly(CONTENTS, OPTS)).to.be.true;
+      expect(file.contents.toString()).to.equal(RES_METHOD);
 
       done();
     });
