@@ -1,6 +1,6 @@
 # gulp-htmlclean
 
-[![npm](https://img.shields.io/npm/v/gulp-htmlclean.svg)](https://www.npmjs.com/package/gulp-htmlclean) [![GitHub issues](https://img.shields.io/github/issues/anseki/gulp-htmlclean.svg)](https://github.com/anseki/gulp-htmlclean/issues) [![David](https://img.shields.io/david/anseki/gulp-htmlclean.svg)](package.json) [![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE-MIT)
+[![npm](https://img.shields.io/npm/v/gulp-htmlclean.svg)](https://www.npmjs.com/package/gulp-htmlclean) [![GitHub issues](https://img.shields.io/github/issues/anseki/gulp-htmlclean.svg)](https://github.com/anseki/gulp-htmlclean/issues) [![David](https://img.shields.io/david/anseki/gulp-htmlclean.svg)](package.json) [![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 This [gulp](http://gulpjs.com/) plugin is wrapper of [htmlclean](https://github.com/anseki/htmlclean).
 
